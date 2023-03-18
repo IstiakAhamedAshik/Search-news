@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Headlines</title>
+    <!-- daisy & tailwind link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="bg-slate-400">
+    <heade >
+        <nav class="w-11/12 mx-auto">
+            <div class="navbar bg-base-100 bg-slate-400">
+                <div class="flex-1">
+
+                    <h1 class="font-bold text-3xl text-white"><span class="bg-accent-focus rounded pl-2 mr-1">The
+                        </span><span>Headlines</span></h1>
+                </div>
+                <div>
+                    <ul class="menu menu-horizontal p-0 text-white">
+                        <li><a href="page1.html">Home</a></li>
+                        <li><a href="page2.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="flex-none gap-2">
+                    <div>
+                        <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                            <div class="w-10 rounded-full">
+                                <img src="img/expert-2.jpg" />
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </nav>
+
+        <section>
+            <div class="m-auto w-11/12">
+                <ul id="all-category" class="menu menu-horizontal p-0 text-white text-sm">
+
+            </div>
+        </section>
+        <section>
+            <div class="bg-gray-300 w-6/12 m-auto rounded mt-5 drop-shadow-2xl">
+                <p class="text-center text-black p-1"><span id="news-number">0</span> Items Found</p>
+            </div>
+        </section>
+    </header>
+
+    <main class="p-10">
+
+        <!-- spinner -->
+        <section id="loader" class="invisible">
+            <progress class="progress w-11/12 ml-10 bg-green-100"></progress>
+        </section>
+        <!-- card -->
+        <section class="w-9/12 m-auto mt-10 mb-5">
+            <div id="news-container">
+
+            </div>
+        </section>
+
+        <!-- modal -->
+        <section>
+            <!-- Put this part before tag -->
+            <input type="checkbox" id="news-detail-modal" class="modal-toggle" />
+            <div class="modal">
+                <div class="modal-box relative bg-zinc-200 text-black">
+                    <label id="modal" for="news-detail-modal" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                    <h3 id="modal-title" class="text-lg font-bold">Congratulations random Internet user!</h3>
+                    <p id="published-date" class="py-4"></p>
+                    <p id="news-detail" class="py-4"></p>
+            </div>
+        </section>
+
+
+    </main>
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="start.js"></script>
+</body>
+<footer class="bg-slate-500 p-10">
+    <h3 class="text-center text-white">Read to Learn</h3>
+</footer>
+
+</html>
